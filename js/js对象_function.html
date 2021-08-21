@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function对象</title>
+    <script>
+        //1
+        var fun1=new Function("a","b","alert(a);");
+        //fun1(1,2);
+        //2
+        function fun2(a,b){
+            alert(a*b);
+        }
+       // fun2(3,4);
+        var fun3=function(a,b){
+            alert(a+b);
+        }
+        //fun3(3,4);
+        function fun2(a,b,c){
+            alert(1);
+        }
+        //alert(fun2.length);
+        function  add(){
+            var sum=0;
+            for (var i = 0; i < arguments.length; i++) {
+                sum+=arguments[i];
+            }
+            return sum;
+        }
+
+        //alert (add(1,2,3,4));
+
+        var a=99;
+        fun();
+        function fun(){
+            document.write(a+"<br>");
+            var a=10;
+            document.write(a+"<br>");
+        }
+        document.write(a+"<br>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
