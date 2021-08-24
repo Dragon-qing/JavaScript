@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function sw(){
+            var light=document.getElementById("light");
+            light.src="img/on.gif";
+        }
+
+    </script>
+</head>
+<body>
+<img src="img/off.gif" id="light" alt="off" onclick="sw();">
+<img src="img/on.gif" id="light2" >
+<script>
+    function fun1(){
+        alert("light2");
+    }
+    var light2=document.getElementById("light2");
+    light2.onclick=fun1;
+</script>
+</body>
+</html>

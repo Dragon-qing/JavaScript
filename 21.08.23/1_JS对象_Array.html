@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array对象</title>
+    <script>
+        //1
+        var arr1=new Array(1,2,3);
+        var arr2=new Array(5);
+        var arr3=[1,2,4,5];
+        document.write(arr1+"<br>");
+        document.write(arr2+"<br>");
+        document.write(arr3+"<br>");
+        document.write("<hr>");
+        var arr4=[1,"abc",true];
+        document.write(arr4+"<br>");
+        document.write(arr4[0]+"<br>");
+        document.write(arr4[1]+"<br>");
+        document.write(arr4[2]+"<br>");
+        document.write(arr4.length+"<br>");
+        arr4[10]="hello";
+        document.write(arr4.length+"<br>");
+        document.write("<hr>")
+        document.write(arr4.join("+")+"<br>");
+        arr4.push(10);
+        document.write(arr4.join("--")+"<br>");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

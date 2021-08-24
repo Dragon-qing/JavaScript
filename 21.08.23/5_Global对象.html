@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global</title>
+    <script>
+        let str="https://www.baidu.com?wd=你好";
+        let encode=encodeURI(str);
+        document.write(encode+"<br>");
+        document.write(decodeURI(encode)+"<br>");
+
+        let encodeCom=encodeURIComponent(str);
+        document.write(encodeCom+"<br>");
+        document.write(decodeURIComponent(encodeCom)+"<br>");
+
+        var str1="1234asdf";
+        let number=parseInt(str1);
+        // alert(isNaN(number));
+        var n=NaN;
+        document.write(isNaN(n));
+        var jsCode="alert(123)";
+        eval(jsCode);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
