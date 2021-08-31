@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+
+</head>
+<body>
+<input type="button" id="openBtn" value="打开新窗口">
+<input type="button" id="closeBtn" value="关闭窗口">
+<script>
+    // var flag=false;
+    // flag=window.confirm("exit?");
+    // if(flag){
+    //     window.close();
+    // }
+    // var result=window.prompt("请输入用户名");
+    // alert(result);
+    var openBtn=document.getElementById("openBtn");
+    var closeBtn=document.getElementById("closeBtn");
+    var newWindow;
+    openBtn.onclick=function (){
+        newWindow=open("https://www.bilibili.com");
+    }
+    closeBtn.onclick=function(){
+        if(newWindow)
+        newWindow.close();
+    }
+    function fun(){
+        alert("boom!!");
+    }
+    // setTimeout(fun,3000);
+    var id=setInterval(fun,2000);
+    clearInterval(id);
+</script>
+</body>
+</html>
